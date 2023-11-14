@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imagens\logotipo.png" width="80" height="50" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="matricula.html">Matricula</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center mt-2">Escolher Cursos:</h1>
+        <p class="text-center mt-2">Escolha os cursos para se matricular</p>
+
+        <table class="table table-hover table-striped table-light">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Curso</th>
+                    <th scope="col">Tempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input onclick="adicionaCurso(this)" value="20" class="form-check-input" type="checkbox" name="curso" id="curso">
+                    </td>
+                    <td>Curso de Desenvolvimento Mobile</td>
+                    <td>20h</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input onclick="adicionaCurso(this)" value="40" class="form-check-input" type="checkbox" name="curso" id="curso">
+                    </td>
+                    <td>Curso de Java</td>
+                    <td>40h</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input onclick="adicionaCurso(this)" value="100" class="form-check-input" type="checkbox" name="curso" id="curso">
+                    </td>
+                    <td>Curso de Front-End Full Stack</td>
+                    <td>100h</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input onclick="adicionaCurso(this)" value="15" class="form-check-input" type="checkbox" name="curso" id="curso">
+                    </td>
+                    <td>Curso de NodeJS</td>
+                    <td>15h</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input onclick="adicionaCurso(this)" value="100" class="form-check-input" type="checkbox" name="curso" id="curso">
+                    </td>
+                    <td>Curso de Back-End Full Stack</td>
+                    <td>100h</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input onclick="adicionaCurso(this)" value="10" class="form-check-input" type="checkbox" name="curso" id="curso">
+                    </td>
+                    <td>Curso de FrameWork</td>
+                    <td>10h</td>
+                </tr>
+                <tr class="table-dark">
+                    <td>Total</td>
+                    <td id="total-cursos">0 curso(s)</td>
+                    <td id="total-horas">0 h</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="confirmaMatricula()" class="btn btn-success" type="button">Confirmar</button>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="matricula.js"></script>
+</body>
+
+</html>
